@@ -89,7 +89,7 @@ Available options:
 | `--swarm-master` |  |  |
 | `--swarm-opt [--swarm-opt option --swarm-opt option]` |  |  |
 | `--swarm-strategy` | "spread" |  |
-| `--tls-san |  |  |
+| `--tls-san` |  |  |
 
 
 To list the machines you have created, use the command:
