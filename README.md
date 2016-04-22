@@ -62,34 +62,34 @@ Available options:
 * `--swarm-strategy "spread"`: Define a default scheduling strategy for Swarm.
 * `--tls-san [--tls-san option --tls-san option]`: Support extra SANs for TLS certs.   
 
-|                                              CLI Option                                             |              Default Value             |      Environment Variable     |
-|:---------------------------------------------------------------------------------------------------:|:--------------------------------------:|:-----------------------------:|
-| `--driver`, `-d`                                                                                    | "none"                                 |                               |
-| `--engine-env  [--engine-env option --engine-env option]`                                           |                                        |                               |
-| `--engine-insecure-registry  [--engine-insecure-registry option --engine-insecure-registry option]` |                                        |                               |
-| `--engine-install-url,`                                                                             | https://get.docker.com                 | [$MACHINE_DOCKER_INSTALL_URL] |
-| `--engine-label [--engine-label option --engine-label option]`                                      |                                        |                               |
-| `--engine-opt [--engine-opt option --engine-opt option]`                                            |                                        |                               |
-| `--engine-registry-mirror  [--engine-registry-mirror option --engine-registry-mirror option]`       |                                        |                               |
-| `--engine-storage-driver`                                                                           |                                        |                               |
-| `--profitbricks-cores`                                                                              | 4                                      | [$PROFITBRICKS_CORES]         |
-| `--profitbricks-disk-size`                                                                          | 50                                     | [$PROFITBRICKS_DISK_SIZE]     |
-| `--profitbricks-disk-type`                                                                          | HDD                                    | [$PROFITBRICKS_DISK_TYPE]     |
-| `--profitbricks-endpoint`                                                                           | "https://api.profitbricks.com/rest/v2" | [$PROFITBRICKS_ENDPOINT]      |
-| `--profitbricks-image`                                                                              | "Ubuntu-15.10-server-2016-03-01"       | [$PROFITBRICKS_IMAGE]         |
-| `--profitbricks-location`                                                                           | US/LAS                                 | [$PROFITBRICKS_LOCATION]      |
-| `--profitbricks-password`                                                                           |                                        | [$PROFITBRICKS_PASSWORD]      |
-| `--profitbricks-ram`                                                                                | 2048                                   | [$PROFITBRICKS_RAM]           |
-| `--profitbricks-username`                                                                           |                                        | [$PROFITBRICKS_USERNAME]      |
-| `--swarm`                                                                                           |                                        |                               |
-| `--swarm-addr`                                                                                      | Detect and use the machine's IP        |                               |
-| `--swarm-discovery`                                                                                 |                                        |                               |
-| `--swarm-host`                                                                                      | tcp://0.0.0.0:3376                     |                               |
-| `--swarm-image`                                                                                     | swarm:latest                           | [$MACHINE_SWARM_IMAGE]        |
-| `--swarm-master`                                                                                    |                                        |                               |
-| `--swarm-opt [--swarm-opt option --swarm-opt option]`                                               |                                        |                               |
-| `--swarm-strategy`                                                                                  | "spread"                               |                               |
-| `--tls-san                                                                                          |                                        |                               |
+| CLI Option | Default Value | Environment Variable |
+|-----------------------------------------------------------------------------------------------------|:--------------------------------------:|:-----------------------------:|
+| `--driver`, `-d` | "none" |  |
+| `--engine-env  [--engine-env option --engine-env option]` |  |  |
+| `--engine-insecure-registry  [--engine-insecure-registry option --engine-insecure-registry option]` |  |  |
+| `--engine-install-url,` | https://get.docker.com | [$MACHINE_DOCKER_INSTALL_URL] |
+| `--engine-label [--engine-label option --engine-label option]` |  |  |
+| `--engine-opt [--engine-opt option --engine-opt option]` |  |  |
+| `--engine-registry-mirror  [--engine-registry-mirror option --engine-registry-mirror option]` |  |  |
+| `--engine-storage-driver` |  |  |
+| `--profitbricks-cores` | 4 | [$PROFITBRICKS_CORES] |
+| `--profitbricks-disk-size` | 50 | [$PROFITBRICKS_DISK_SIZE] |
+| `--profitbricks-disk-type` | HDD | [$PROFITBRICKS_DISK_TYPE] |
+| `--profitbricks-endpoint` | "https://api.profitbricks.com/rest/v2" | [$PROFITBRICKS_ENDPOINT] |
+| `--profitbricks-image` | "Ubuntu-15.10-server-2016-03-01" | [$PROFITBRICKS_IMAGE] |
+| `--profitbricks-location` | US/LAS | [$PROFITBRICKS_LOCATION] |
+| `--profitbricks-password` |  | [$PROFITBRICKS_PASSWORD] |
+| `--profitbricks-ram` | 2048 | [$PROFITBRICKS_RAM] |
+| `--profitbricks-username` |  | [$PROFITBRICKS_USERNAME] |
+| `--swarm` |  |  |
+| `--swarm-addr` | Detect and use the machine's IP |  |
+| `--swarm-discovery` |  |  |
+| `--swarm-host` | tcp://0.0.0.0:3376 |  |
+| `--swarm-image` | swarm:latest | [$MACHINE_SWARM_IMAGE] |
+| `--swarm-master` |  |  |
+| `--swarm-opt [--swarm-opt option --swarm-opt option]` |  |  |
+| `--swarm-strategy` | "spread" |  |
+| `--tls-san |  |  |
 
 
 To list the machines you have created, use the command:
