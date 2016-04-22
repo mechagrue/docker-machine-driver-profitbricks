@@ -35,46 +35,66 @@ To get detailed information about the possible options,  run the command:
 
 Available options:
 
-* `--driver`, `-d` "none": Driver to create machine with.
+* `--driver`, `-d`: Driver to create machine with.
 * `--engine-env [--engine-env option --engine-env option]`: Specify environment variables to set in the engine.
 * `--engine-insecure-registry [--engine-insecure-registry option --engine-insecure-registry option]`: Specify insecure registries to allow with the created engine.
-* `--engine-install-url "https://get.docker.com"` Custom URL to use for engine installation [$MACHINE_DOCKER_INSTALL_URL].
+* `--engine-install-url` Custom URL to use for engine installation.
 * `--engine-label [--engine-label option --engine-label option]`: Specify labels for the created engine.
 * `--engine-opt [--engine-opt option --engine-opt option]`: Specify arbitrary flags to include with the created engine in the form flag=value.
 * `--engine-registry-mirror [--engine-registry-mirror option --engine-registry-mirror option]`: Specify registry mirrors to use.
 * `--engine-storage-driver`: Specify a storage driver to use with the engine
-* `--profitbricks-cores "4"`: ProfitBricks cores (2, 3, 4, 5, 6, etc.) [$PROFITBRICKS_CORES].
-* `--profitbricks-disk-size "50"`: ProfitBricks disk size (10, 50, 100, 200, 400) [$PROFITBRICKS_DISK_SIZE]
-* `--profitbricks-disk-type "HDD"`: ProfitBricks disk type (HDD, SSD) [$PROFITBRICKS_DISK_TYPE].
-* `--profitbricks-endpoint "https://api.profitbricks.com/rest/v2"`: ProfitBricks API endpoint [$PROFITBRICKS_ENDPOINT].
-* `--profitbricks-image "Ubuntu-15.10-server-2016-03-01"`: ProfitBricks image [$PROFITBRICKS_IMAGE].
-* `--profitbricks-location "us/las"`: ProfitBricks location [$PROFITBRICKS_LOCATION].
-* `--profitbricks-password`: ProfitBricks password [$PROFITBRICKS_PASSWORD].
-* `--profitbricks-ram "2048"`: ProfitBricks ram (1024, 2048, 3072, 4096, etc.) [$PROFITBRICKS_RAM].
-* `--profitbricks-username`: ProfitBricks username [$PROFITBRICKS_USERNAME].
+* `--profitbricks-cores`: ProfitBricks cores (2, 3, 4, 5, 6, etc.).
+* `--profitbricks-disk-size`: ProfitBricks disk size (10, 50, 100, 200, 400).
+* `--profitbricks-disk-type`: ProfitBricks disk type (HDD, SSD).
+* `--profitbricks-endpoint`: ProfitBricks API endpoint.
+* `--profitbricks-image`: ProfitBricks image.
+* `--profitbricks-location`: ProfitBricks location.
+* `--profitbricks-password`: ProfitBricks password.
+* `--profitbricks-ram`: ProfitBricks RAM (1024, 2048, 3072, 4096, etc.).
+* `--profitbricks-username`: ProfitBricks username.
 * `--swarm`: Configure Machine with Swarm.
-*  `--swarm-addr`: addr to advertise for Swarm (default: detect and use the machine IP).
+*  `--swarm-addr`: Address to advertise for Swarm.
 *  `--swarm-discovery`: Discovery service to use with Swarm.
-* `--swarm-host "tcp://0.0.0.0:3376"`: IP/socket to listen on for Swarm master.
-* `--swarm-image "swarm:latest"`: Specify Docker image to use for Swarm [$MACHINE_SWARM_IMAGE].
+* `--swarm-host`: IP/socket to listen on for Swarm master.
+* `--swarm-image`: Specify Docker image to use for Swarm.
 * `--swarm-master`: Configure Machine to be a Swarm master.
 * `--swarm-opt [--swarm-opt option --swarm-opt option]`: Define arbitrary flags for Swarm.
 * `--swarm-strategy "spread"`: Define a default scheduling strategy for Swarm.
 * `--tls-san [--tls-san option --tls-san option]`: Support extra SANs for TLS certs.   
 
+|                                              CLI Option                                             |              Default Value             |      Environment Variable     |
+|:---------------------------------------------------------------------------------------------------:|:--------------------------------------:|:-----------------------------:|
+| `--driver`, `-d`                                                                                    | "none"                                 |                               |
+| `--engine-env  [--engine-env option --engine-env option]`                                           |                                        |                               |
+| `--engine-insecure-registry  [--engine-insecure-registry option --engine-insecure-registry option]` |                                        |                               |
+| `--engine-install-url,`                                                                             | https://get.docker.com                 | [$MACHINE_DOCKER_INSTALL_URL] |
+| `--engine-label [--engine-label option --engine-label option]`                                      |                                        |                               |
+| `--engine-opt [--engine-opt option --engine-opt option]`                                            |                                        |                               |
+| `--engine-registry-mirror  [--engine-registry-mirror option --engine-registry-mirror option]`       |                                        |                               |
+| `--engine-storage-driver`                                                                           |                                        |                               |
+| `--profitbricks-cores`                                                                              | 4                                      | [$PROFITBRICKS_CORES]         |
+| `--profitbricks-disk-size`                                                                          | 50                                     | [$PROFITBRICKS_DISK_SIZE]     |
+| `--profitbricks-disk-type`                                                                          | HDD                                    | [$PROFITBRICKS_DISK_TYPE]     |
+| `--profitbricks-endpoint`                                                                           | "https://api.profitbricks.com/rest/v2" | [$PROFITBRICKS_ENDPOINT]      |
+| `--profitbricks-image`                                                                              | "Ubuntu-15.10-server-2016-03-01"       | [$PROFITBRICKS_IMAGE]         |
+| `--profitbricks-location`                                                                           | US/LAS                                 | [$PROFITBRICKS_LOCATION]      |
+| `--profitbricks-password`                                                                           |                                        | [$PROFITBRICKS_PASSWORD]      |
+| `--profitbricks-ram`                                                                                | 2048                                   | [$PROFITBRICKS_RAM]           |
+| `--profitbricks-username`                                                                           |                                        | [$PROFITBRICKS_USERNAME]      |
+| `--swarm`                                                                                           |                                        |                               |
+| `--swarm-addr`                                                                                      | Detect and use the machine's IP        |                               |
+| `--swarm-discovery`                                                                                 |                                        |                               |
+| `--swarm-host`                                                                                      | tcp://0.0.0.0:3376                     |                               |
+| `--swarm-image`                                                                                     | swarm:latest                           | [$MACHINE_SWARM_IMAGE]        |
+| `--swarm-master`                                                                                    |                                        |                               |
+| `--swarm-opt [--swarm-opt option --swarm-opt option]`                                               |                                        |                               |
+| `--swarm-strategy`                                                                                  | "spread"                               |                               |
+| `--tls-san                                                                                          |                                        |                               |
+
 
 To list the machines you have created, use the command:
 
     docker-machine ls
-
-It will return information about your machines, similar to this:
-
-```
-NAME           ACTIVE   DRIVER         STATE     URL                         SWARM   DOCKER    ERRORS
-default        -        virtualbox     Running   tcp://192.168.99.100:2376           v1.10.2   
-test-machine   -        profitbricks   Running   tcp://162.254.26.156:2376           v1.10.3   
-
-```
 
 # Create a Swarm of ProfitBricks Machines 
 
